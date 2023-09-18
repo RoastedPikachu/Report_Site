@@ -30,13 +30,13 @@ export default function Home() {
     <>
         <TheHeader/>
 
-        <main className='relative px-[15%] mt-[50px] w-full h-auto min-h-[800px]'>
+        <main className='relative mt-[50px] px-[15%] pb-[50px] w-full h-auto min-h-[800px]'>
             {tasks.length && <h2 className='text-[#ffffff] text-[2.25rem] font-bold'>Последние работы: </h2>}
 
             <div>
                 {tasks.length && tasks.map((item:Task) => (
                     <div key={item.id} className='flex items-center mt-[40px] w-full h-[100px] border-[3px] border-[#bf5af2] rounded-[15px] text-[#ffffff] text-[1.25rem] text-center'>
-                        <span className='flex justify-center items-center w-[20%] h-full text-[2rem] border-r-2 border-[#bf5af2]'>№{ item.id }</span>
+                        <span className='flex justify-center items-center w-[20%] h-full text-[2rem] border-r-2 border-[#bf5af2] font-bold'>№{ item.id }</span>
 
                         <span className='flex justify-center items-center w-[35%] h-full border-r-2 border-[#bf5af2]'>{ item.type }</span>
 

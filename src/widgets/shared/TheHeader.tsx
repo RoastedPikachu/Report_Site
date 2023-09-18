@@ -9,6 +9,8 @@ const TheHeader = () => {
 
             <Link href='/homeworks' className='hover:text-[#bf5af2] ease-in-out duration-500 outline-none'>Домашние задания</Link>
 
+            <Link href='/questions' className='hover:text-[#bf5af2] ease-in-out duration-500 outline-none'>Вопросы</Link>
+
             <Link href='/design' className='hover:text-[#bf5af2] ease-in-out duration-500 outline-none'>Проектирование</Link>
 
             <Link href='/labs' className='hover:text-[#bf5af2] ease-in-out duration-500 outline-none'>Лабораторные и практические</Link>
