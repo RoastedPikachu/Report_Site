@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 
 import { taskSlice } from "@/store/storeReducers/TaskSlice";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { useAppDispatch } from "@/store/storeHooks";
-import { RootState } from "@/store";
+// import { RootState } from "@/store";
 
 import TheHeader from "@/widgets/shared/TheHeader";
 import TheFooter from "@/widgets/shared/TheFooter";
@@ -19,58 +19,56 @@ interface Task {
 export default function Home() {
   const dispatch = useAppDispatch();
 
-  const tasks = useSelector((state: RootState) => state.tasksSlice.tasks)
-    ? useSelector((state: RootState) => state.tasksSlice.tasks)
-    : [
-        {
-          id: 1,
-          type: "Практическая работа",
-          date: "18.09.23",
-          link: "/static/КарабутБорис_ОтчетПоПр1.docx",
-        },
-        {
-          id: 2,
-          type: "Практическая работа",
-          date: "25.09.23",
-          link: "/static/КарабутБорис_ОтчетПоПр2.docx",
-        },
-        {
-          id: 3,
-          type: "Практическая работа",
-          date: "02.10.23",
-          link: "/static/ОтчетПоПрактической3_КарабутБорис.docx",
-        },
-        {
-          id: 4,
-          type: "Практическая работа",
-          date: "02.10.23",
-          link: "/static/ОтчетПоПр4_КарабутБорис.docx",
-        },
-        {
-          id: 5,
-          type: "Практическая работа",
-          date: "06.10.23",
-          link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр5.docx",
-        },
-        {
-          id: 6,
-          type: "Практическая работа",
-          date: "12.10.23",
-          link: "/static/КарабутБорис_ОтчетПоПр6.docx",
-        },
-        {
-          id: 6,
-          type: "Диаграмма Ганта",
-          date: "19.10.23",
-          link: "/static/ОтчетПоДиаграммеГанта_КарабутБорис_3ИСИП-521.docx",
-        },
-        {
-          id: 7,
-          type: "Учебная практика",
-          date: "16.10.23",
-          link: "/static/Отчёт_по_практике_МДК_05_01_КарабутБорисЕвгеньевич_гр_3ИСИП_521.docx",
-        },
-      ];
+  const tasks = [
+    {
+      id: 1,
+      type: "Практическая работа",
+      date: "18.09.23",
+      link: "/static/КарабутБорис_ОтчетПоПр1.docx",
+    },
+    {
+      id: 2,
+      type: "Практическая работа",
+      date: "25.09.23",
+      link: "/static/КарабутБорис_ОтчетПоПр2.docx",
+    },
+    {
+      id: 3,
+      type: "Практическая работа",
+      date: "02.10.23",
+      link: "/static/ОтчетПоПрактической3_КарабутБорис.docx",
+    },
+    {
+      id: 4,
+      type: "Практическая работа",
+      date: "02.10.23",
+      link: "/static/ОтчетПоПр4_КарабутБорис.docx",
+    },
+    {
+      id: 5,
+      type: "Практическая работа",
+      date: "06.10.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр5.docx",
+    },
+    {
+      id: 6,
+      type: "Практическая работа",
+      date: "12.10.23",
+      link: "/static/КарабутБорис_ОтчетПоПр6.docx",
+    },
+    {
+      id: 6,
+      type: "Диаграмма Ганта",
+      date: "19.10.23",
+      link: "/static/ОтчетПоДиаграммеГанта_КарабутБорис_3ИСИП-521.docx",
+    },
+    {
+      id: 7,
+      type: "Учебная практика",
+      date: "16.10.23",
+      link: "/static/Отчёт_по_практике_МДК_05_01_КарабутБорисЕвгеньевич_гр_3ИСИП_521.docx",
+    },
+  ];
 
   const [type, setType] = useState("");
   const [date, setDate] = useState("");
