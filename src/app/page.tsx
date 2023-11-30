@@ -68,6 +68,24 @@ export default function Home() {
       date: "16.10.23",
       link: "/static/Отчёт_по_практике_МДК_05_01_КарабутБорисЕвгеньевич_гр_3ИСИП_521.docx",
     },
+    {
+      id: 8,
+      type: "Практическая работа",
+      date: "16.11.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр7.docx.docx",
+    },
+    {
+      id: 9,
+      type: "Практическая работа",
+      date: "21.10.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр8.docx.docx",
+    },
+    {
+      id: 10,
+      type: "Презентация",
+      date: "29.11.23",
+      link: "https://docs.google.com/presentation/d/1J4NeVKSOOJMUZYqmzWJDk6g2tb9zEcnDCoYFBXuvuBg/edit?usp=sharing",
+    },
   ];
 
   const [type, setType] = useState("");
