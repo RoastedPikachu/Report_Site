@@ -104,6 +104,18 @@ export default function Home() {
       date: "20.11.23",
       link: "/static/КарабутБорис_3ИСИП-521_Лекция.docx",
     },
+    {
+      id: 14,
+      type: "Практическая работа",
+      date: "18.12.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр15.docx",
+    },
+    {
+      id: 15,
+      type: "Практическая работа",
+      date: "19.12.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр9.docx",
+    },
   ];
 
   const [type, setType] = useState("");
