@@ -72,19 +72,37 @@ export default function Home() {
       id: 8,
       type: "Практическая работа",
       date: "16.11.23",
-      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр7.docx.docx",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр7.docx",
     },
     {
       id: 9,
       type: "Практическая работа",
       date: "21.10.23",
-      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр8.docx.docx",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр8.docx",
     },
     {
       id: 10,
       type: "Презентация",
       date: "29.11.23",
       link: "https://docs.google.com/presentation/d/1J4NeVKSOOJMUZYqmzWJDk6g2tb9zEcnDCoYFBXuvuBg/edit?usp=sharing",
+    },
+    {
+      id: 11,
+      type: "Практическая работа",
+      date: "10.12.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр10.docx",
+    },
+    {
+      id: 12,
+      type: "Практическая работа",
+      date: "14.12.23",
+      link: "/static/КарабутБорис_3ИСИП-521_ОтчетПоПр14.docx",
+    },
+    {
+      id: 13,
+      type: "Конспект",
+      date: "20.11.23",
+      link: "/static/КарабутБорис_3ИСИП-521_Лекция.docx",
     },
   ];
 
