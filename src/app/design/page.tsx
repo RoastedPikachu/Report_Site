@@ -1,15 +1,216 @@
+"use client";
 import React from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 
 import TheHeader from "@/widgets/shared/TheHeader";
 import TheFooter from "@/widgets/shared/TheFooter";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Page = () => {
     return (
         <>
            <TheHeader/>
 
-            <main>
+            <main className="relative w-full h-auto">
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
 
+                        <a href="/static/1.png"><img src="/static/1.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/10.png"><img src="/static/10.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/10.psd" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px] cursor-pointer">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
+
+                        <a href="/static/2.png"><img src="/static/2.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/11.png"><img src="/static/11.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/11.psd" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
+
+                        <a href="/static/3.png"><img src="/static/3.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/12.png"><img src="/static/12.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/12.psd" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
+
+                        <a href="/static/4.png"><img src="/static/4.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/13.png"><img src="/static/13.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/13.psd" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
+
+                        <a href="/static/5.png"><img src="/static/5.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/14.png"><img src="/static/14.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/14.png" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
             </main>
 
             <TheFooter/>
