@@ -17,6 +17,8 @@ const Page = () => {
            <TheHeader/>
 
             <main className="relative w-full h-auto">
+                <h2 className="mt-[50px] mb-[20px] text-[#ffffff] text-[2rem] text-center font-bold"> Лабораторная работа №1</h2>
+
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
@@ -212,6 +214,8 @@ const Page = () => {
                     </SwiperSlide>
                 </Swiper>
 
+                <h2 className="mt-[50px] mb-[20px] text-[#ffffff] text-[2rem] text-center font-bold"> Лабораторная работа №2</h2>
+
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
@@ -402,6 +406,45 @@ const Page = () => {
                         <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
 
                         <a href="/static/КарабутБорис_3ИСИП-521_ОтчетПоЛаб2.docx" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-[90%] text-[#bf5af2] text-[2rem] text-center font-bold">Изначальное изображение</h2>
+
+                        <a href="/static/InitialMap.png"><img src="/static/InitialMap.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/Map.png"><img src="/static/Map.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .psd</h2>
+
+                        <a href="/static/Map.psd" className="w-full h-full">
+                            <img src="/static/Map.png" alt=""/>
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
+
+                        <a href="/static/КарабутБорис_3ИСИП_521_ОтчетПоЛаб3.docx" className="w-full h-full">
                             <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
                         </a>
                     </SwiperSlide>
