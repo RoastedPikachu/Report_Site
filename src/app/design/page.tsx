@@ -485,6 +485,41 @@ const Page = () => {
                         <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
                     </SwiperSlide>
                 </Swiper>
+
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    initialSlide={1}
+                    loop={true}
+                    centeredSlides={true}
+                    modules={[Navigation]}
+                    navigation={true}
+                    className="mt-[50px] mx-[5%] w-[90%] max-w-[1440px] h-[420px]"
+                >
+                    <SwiperSlide>
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Результат .png</h2>
+
+                        <a href="/static/Moodboard.png"><img src="/static/Moodboard.png" alt=""/></a>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Пустота</h2>
+
+                        <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Пустота</h2>
+
+                        <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Пустота</h2>
+
+                        <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                    </SwiperSlide>
+                </Swiper>
             </main>
 
             <TheFooter/>
