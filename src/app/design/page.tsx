@@ -508,9 +508,11 @@ const Page = () => {
                     </SwiperSlide>
 
                     <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
-                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Пустота</h2>
+                        <h2 className="absolute w-full text-[#bf5af2] text-[2rem] text-center font-bold">Отчет</h2>
 
-                        <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        <a href="https://www.figma.com/file/yTeSHFIgSP4bJf5MoRWfXl/Agora-Project?type=design&node-id=236%3A51&mode=design&t=Tt6J8V7Egg0EhEmv-1" className="w-full h-full">
+                            <div className="w-full h-full bg-[#747474] rounded-[10px]"></div>
+                        </a>
                     </SwiperSlide>
 
                     <SwiperSlide className="relative flex justify-center items-center w-[400px] h-[400px]">
